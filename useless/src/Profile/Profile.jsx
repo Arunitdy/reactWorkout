@@ -1,10 +1,11 @@
+
 import React, { useState } from "react";
 import "./Profile.css";
 
-const Profile = ({ email ,password}) => {
+const Profile = ({email,password}) => {
   const [info, setInfo] = useState({
     name: "John Doe",
-    email: email,  // Set the email from props
+    email: email,
     phone: password,
     star: true, 
   });
@@ -31,7 +32,7 @@ const Profile = ({ email ,password}) => {
       </button>
       <h3>{name}</h3>
       <div className="phone">{phone}</div>
-      <div>{email}</div> {/* Display email */}
+      <div>{email}</div>
     </form>
   );
 };
