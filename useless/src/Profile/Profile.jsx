@@ -18,7 +18,7 @@ const Profile = ({email,password}) => {
     }));
   };
 
-  const { name, phone, star } = info;
+  const { name,  email:e,phone:phone1, star } = info;
 
   return (
     <form className="profile">
@@ -31,8 +31,8 @@ const Profile = ({email,password}) => {
         {star ? "★" : "☆"}
       </button>
       <h3>{name}</h3>
-      <div className="phone">{phone}</div>
-      <div>{email}</div>
+      <div >{phone1}</div>
+      <div>{e}</div>
     </form>
   );
 };
