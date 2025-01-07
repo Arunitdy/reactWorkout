@@ -3,6 +3,7 @@ import Login from './Login/Login';
 import Chef from './Chef/Chef';
 import Count from './Count/Count';
 import Profile from './Profile/Profile';
+import Timer from './Timer/Timer'
 // import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Chef />
       <Count />
       <Profile email={email} password={password} />
+      <Timer />
     </div>
   );
 }
